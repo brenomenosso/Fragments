@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activitys.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_nota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/white"
+        tools:listitem="@layout/item_lista_notas"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnCadNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_anchor="@id/recycler_nota"
+        app:layout_anchorGravity="bottom|end"
+        android:background="@color/colorBotao"
+        app:backgroundTint="#6aa1ce"
+        app:srcCompat="@drawable/baseline_add_white_24" />
+
+</android.support.design.widget.CoordinatorLayout>
